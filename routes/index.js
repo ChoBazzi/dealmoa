@@ -31,13 +31,13 @@ const iconv = require("iconv-lite"); //새로추가
 
 
  /* naver api */
-var client_id = 'K3pfuWt6HY25WTRh5l5i';
-var client_secret = 'XPcSUwfXW6';
+var client_id = '';
+var client_secret = '';
 var obj=[];
 var item=[];
 
 /*11번가 api*/
-var st11_key = '8470a641840d1947ba87c18d130d1def';
+var st11_key = '';
 var obj11=[];
 var item11=[];
 
@@ -271,7 +271,7 @@ router.get('/naversearch', function(req, res){
       }
    };
 
-   const SERVICE_KEY = '8470a641840d1947ba87c18d130d1def'
+   const SERVICE_KEY = ''
    console.log(query);
    var requestUrl = 'http://openapi.11st.co.kr/openapi/OpenApiService.tmall?key='+SERVICE_KEY+'&apiCode=ProductSearch&keyword='+encodeURI(query)+'&pageSize=50&sortCd=CP';
    var options11 = {
